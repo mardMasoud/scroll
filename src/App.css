@@ -1,4 +1,4 @@
-body{
+body {
   background-color: bisque;
   height: 100vh;
   display: flex;
@@ -6,7 +6,7 @@ body{
   /* overflow: hidden; */
   /* overflow: scroll; */
 }
-.container{
+.container {
   background-color: aquamarine;
   width: 500px;
   /* height: 200px; */
@@ -18,21 +18,37 @@ body{
   flex-direction: column;
   /* overflow: scroll; */
   /* flex-wrap: wrap; */
- /* flex-wrap: wrap-reverse; */
-
+  /* flex-wrap: wrap-reverse; */
 }
-.content{
-  width:200px;
-  height:100px;
+.content {
+  width: 200px;
+  height: 100px;
   border-radius: 25px;
   background-color: blueviolet;
   display: grid;
-place-items: center;
-transform: translateX(0);
-/* transition: all 0.5s linear; */
-/* display: none; */
+  place-items: center;
+  transform: translateX(0);
+  transition: all 0.5s linear;
+  /* display: none; */
 }
-.x{
- transform: translateX(-100%);
-
+.y {
+  /* display: none; */
+  background-color: aquamarine;
+}
+.x {
+  opacity: 1;
+  background-color: blueviolet;
+  /* display: grid; */
+  transform: translateX(0);
+}
+.content1 {
+  width: 200px;
+  height: 100px;
+  border-radius: 25px;
+  background-color: rgb(226, 95, 43);
+  display: grid;
+  place-items: center;
+  position: relative;
+  left: -50%;
+  /* transition: all 0.5s linear; */
 }
