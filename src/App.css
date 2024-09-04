@@ -33,14 +33,12 @@ body {
 }
 .y {
   /* display: none; */
-  background-color: aquamarine;
-}
-.x {
-  opacity: 1;
-  background-color: blueviolet;
-  /* display: grid; */
+  background-color: rgb(150, 255, 127);
   transform: translateX(0);
+  opacity: 1;
+  /* transition-delay: 0.5s; */
 }
+
 .content1 {
   width: 200px;
   height: 100px;
@@ -49,6 +47,21 @@ body {
   display: grid;
   place-items: center;
   position: relative;
-  left: -50%;
-  /* transition: all 0.5s linear; */
+  transform: translateX(-200%);
+  opacity: 0;
+  transition: all 0.5s linear;
+  /* animation-delay: 1s; */
+}
+.content2 {
+  width: 200px;
+  height: 100px;
+  border-radius: 25px;
+  background-color: rgb(226, 95, 43);
+  display: grid;
+  place-items: center;
+  position: relative;
+  transform: translateX(200%);
+  opacity: 0;
+  transition: all 1s linear;
+  /* animation-delay: 1s; */
 }
